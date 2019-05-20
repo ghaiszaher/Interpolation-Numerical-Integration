@@ -37,6 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.instructionLabel = new System.Windows.Forms.Label();
             this.lagrangeFunctionGroupBox = new System.Windows.Forms.GroupBox();
+            this.label_function_Lagrange = new System.Windows.Forms.Label();
             this.getYBtn_Lagrange = new System.Windows.Forms.Button();
             this.label_YValue_Lagrange = new System.Windows.Forms.Label();
             this.lagrangeYLabel = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@
             this.textBox_newton_forward = new System.Windows.Forms.TextBox();
             this.forwardEnterxLabel = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label_function_Newton_Backward = new System.Windows.Forms.Label();
             this.getYBtn_Backward = new System.Windows.Forms.Button();
             this.label_YValue_Backward = new System.Windows.Forms.Label();
             this.backwardYLabel = new System.Windows.Forms.Label();
@@ -88,8 +90,7 @@
             this.label_Table_Instructions = new System.Windows.Forms.Label();
             this.Btn_Table_GetValue = new System.Windows.Forms.Button();
             this.table2Panel = new System.Windows.Forms.Panel();
-            this.label_function_Lagrange = new System.Windows.Forms.Label();
-            this.label_function_Newton_Backward = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.lagrangeFunctionGroupBox.SuspendLayout();
@@ -196,6 +197,15 @@
             this.lagrangeFunctionGroupBox.TabIndex = 5;
             this.lagrangeFunctionGroupBox.TabStop = false;
             this.lagrangeFunctionGroupBox.Text = "Function (Lagrange) التابع - استيفاء لاغرانج";
+            // 
+            // label_function_Lagrange
+            // 
+            this.label_function_Lagrange.AutoSize = true;
+            this.label_function_Lagrange.Location = new System.Drawing.Point(7, 37);
+            this.label_function_Lagrange.Name = "label_function_Lagrange";
+            this.label_function_Lagrange.Size = new System.Drawing.Size(70, 13);
+            this.label_function_Lagrange.TabIndex = 13;
+            this.label_function_Lagrange.Text = "The Function";
             // 
             // getYBtn_Lagrange
             // 
@@ -345,6 +355,15 @@
             this.tabPage4.Text = "تراجعي";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label_function_Newton_Backward
+            // 
+            this.label_function_Newton_Backward.AutoSize = true;
+            this.label_function_Newton_Backward.Location = new System.Drawing.Point(7, 26);
+            this.label_function_Newton_Backward.Name = "label_function_Newton_Backward";
+            this.label_function_Newton_Backward.Size = new System.Drawing.Size(70, 13);
+            this.label_function_Newton_Backward.TabIndex = 18;
+            this.label_function_Newton_Backward.Text = "The Function";
+            // 
             // getYBtn_Backward
             // 
             this.getYBtn_Backward.Location = new System.Drawing.Point(163, 138);
@@ -436,6 +455,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.groupBox_Integration_Result);
             this.tabPage2.Controls.Add(this.Btn_Table_Reset);
             this.tabPage2.Controls.Add(this.groupBox_Integration_Func);
@@ -699,23 +719,14 @@
             this.table2Panel.Size = new System.Drawing.Size(319, 238);
             this.table2Panel.TabIndex = 0;
             // 
-            // label_function_Lagrange
+            // label12
             // 
-            this.label_function_Lagrange.AutoSize = true;
-            this.label_function_Lagrange.Location = new System.Drawing.Point(7, 37);
-            this.label_function_Lagrange.Name = "label_function_Lagrange";
-            this.label_function_Lagrange.Size = new System.Drawing.Size(70, 13);
-            this.label_function_Lagrange.TabIndex = 13;
-            this.label_function_Lagrange.Text = "The Function";
-            // 
-            // label_function_Newton_Backward
-            // 
-            this.label_function_Newton_Backward.AutoSize = true;
-            this.label_function_Newton_Backward.Location = new System.Drawing.Point(7, 26);
-            this.label_function_Newton_Backward.Name = "label_function_Newton_Backward";
-            this.label_function_Newton_Backward.Size = new System.Drawing.Size(70, 13);
-            this.label_function_Newton_Backward.TabIndex = 18;
-            this.label_function_Newton_Backward.Text = "The Function";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(721, 649);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(104, 13);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "© Ghais Zaher 2012";
             // 
             // Form1
             // 
@@ -740,6 +751,7 @@
             this.tabPage4.PerformLayout();
             this.table1GroupBox.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.groupBox_Integration_Result.ResumeLayout(false);
             this.groupBox_Integration_Result.PerformLayout();
             this.groupBox_Integration_Func.ResumeLayout(false);
@@ -812,6 +824,7 @@
         private System.Windows.Forms.Label label_function_Newton_Forward;
         private System.Windows.Forms.Label label_function_Lagrange;
         private System.Windows.Forms.Label label_function_Newton_Backward;
+        private System.Windows.Forms.Label label12;
     }
 }
 
